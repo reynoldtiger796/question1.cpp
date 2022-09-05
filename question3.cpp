@@ -21,6 +21,8 @@ using namespace std;
 
 double calculateRetail(double wholesale, double percentage)
 {
+return (wholesale+(wholesale*(percentage/100)));
+
     // Write your code here
     // do not forget to retun the value
 }
@@ -28,5 +30,22 @@ double calculateRetail(double wholesale, double percentage)
 
 int main()
 {
+double price;
+
+cout << "Please enter items whole sales price ";
+
+cin >> price;
+
+double percentage;
+
+cout << "Please enter items markup percentage ";
+
+cin >> percentage;
+
+double res = calculateRetail(price,percentage);
+
+cout << "The retail price is $" << res;
+
+return 0;
   // write your code here.
 }
